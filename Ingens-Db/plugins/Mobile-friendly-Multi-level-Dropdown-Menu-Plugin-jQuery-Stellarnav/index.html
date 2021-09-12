@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="css/stellarnav.css">
+	<!-- required -->
+<style>
+/* styles for this sample only */
+*{ margin: 0; padding: 0; }
+body { height: 3200px; font-size: 16px; font-family: 'Exo 2', sans-serif; background: #efefef; color: #555; }
+.header { text-align: center; }
+.header a { padding: 30px 0 0; display: block; font-size: 48px; text-decoration: none; color: #555; }
+.header p { margin: 10px 0 40px 0; font-size: 18px; }
+.container { max-width: 1200px; margin: 0 auto; }
+@media only screen and (max-width : 1000px) {
+	.stellarnav > ul > li > a { padding: 20px 23px; }
+}
+/* styles for this sample only */
+</style>
+
+</head>
+
+<body>
+	<div class="header">
+		<a href="#">StellarNav.js</a>
+		<p>Responsive, Lightweight, Multi-Level Dropdown Menu.</p>
+	</div>
+	<div class="stellarnav">
+		<ul>
+			<li><a href="">jQuery</a>
+		    	<ul>
+						<li><a href="#">DOM Manipulation</a>
+		    			<ul>
+				    		<li><a href="#">append</a>
+				    			<ul>
+				    				<li><a href="#">Setter</a>
+				    					<ul>
+				    						<li><a href="#">html</a></li>
+				    						<li><a href="#">text</a></li>
+				    						<li><a href="#">val</a></li>
+				    					</ul>
+				    				</li>
+				    				
+				    			</ul>
+				    		</li>
+				    		<li><a href="#">prepend</a></li>
+				    		<li><a href="#">before</a></li>
+		    			</ul>
+		    		</li>
+		    		<li><a href="#">DOM Traversal</a>
+		    			<ul>
+				    		<li><a href="#">Find</a></li>
+				    		<li><a href="#">eq</a></li>
+				    		<li><a href="#">has</a></li>
+						</ul>
+		    		</li>
+		    		<li><a href="#">Events</a>
+		    			<ul>
+		    				<li><a href="#">click</a></li>
+		    				<li><a href="#">mouseenter</a></li>
+		    				<li><a href="#">hover</a></li>
+		    			</ul>
+		    		</li>
+		    	</ul>
+		    </li>
+
+		    <li><a href="">PHP</a></li>
+		    <li><a href="">HTML5</a></li>
+		    <li><a href="">AngularJS</a></li>
+		    <li><a href="">XML</a></li>
+		    <li class="drop-left"><a href="">Drop Left</a>
+		    	<ul>
+		    		<li><a href="#">Bootstrap?</a>
+		    			<ul>
+				    		<li><a href="#">Menu</a>
+				    			<ul>
+				    				<li><a href="#">navbar</a></li>
+				    				<li><a href="#">tabs</a></li>
+				    				<li><a href="#">pills</a></li>
+				    			</ul>
+				    		</li>
+				    		<li><a href="#">table</a></li>
+				    		<li><a href="#">Carousel</a></li>
+				    	</ul>
+				    		</li>
+				    		<li><a href="#">Frameworks</a></li>
+				    		
+		    	</ul>
+		    		
+	</div>
+	<!-- .stellarnav -->
+
+	<script type='text/javascript' src='js/jquery-3.4.1.min.js'></script>
+	<script type="text/javascript" src="js/stellarnav.min.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			jQuery('.stellarnav').stellarNav({
+				theme: 'dark'
+			});
+		});
+	</script>
+	
+</body>
+</html>
